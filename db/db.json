@@ -1,0 +1,30 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "CategoryName": "Beverages",
+        "MasterId": "null"
+      },
+      {
+        "id": 2,
+        "CategoryName": "Condiments",
+        "MasterId": "1"
+      },
+      {
+        "id": 3,
+        "CategoryName": "Beverages",
+        "MasterId": "null"
+      },
+      {
+        "id": 4,
+        "CategoryName": "Beverages",
+        "MasterId": "1"
+      },
+      {
+        "id": 5,
+        "CategoryName": "Beverages",
+        "MasterId": "4"
+      }
+    ]
+  }
+  
