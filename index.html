@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <h1 class="text-center mt-5">The Panel </h1>
-        <div class="row mt-5">
-            <div class="col">
-                <form method="POST">
-                    <div class="form-group">
-                        <label for="">Kategori Adı : <span id="cname"></span></label>
-                        <input type="text" class="form-control" id="CategoryName" name="CategoryName">
-                        <input type="hidden" id="MasterId" name="MasterId" value="null">
-                    </div>
-
-                    <div class="form-group">
-                        <button class="btn btn-outline-danger btn-sm" type="reset"> Temizle</button>
-                        <button id="btnKaydet" class="btn btn-outline-dark btn-sm" type="button"> Kaydet</button>
-                    </div>
-                </form>
+      <h1 class="text-center mt-5">The Panel</h1>
+      <div class="row mt-5">
+        <div class="col">
+          <form method="POST" id="currentForm">
+            <div class="form-group">
+              <label for="">Kategori Adı : <span id="cname"></span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="CategoryName"
+                name="CategoryName"
+              />
+              <input type="hidden" id="MasterId" name="MasterId" value="null" />
             </div>
-        </div>
 
-        <div class="row mt-5 n-menu">
-        </div> 
+            <div class="form-group">
+              <button class="btn btn-outline-danger btn-sm" type="reset">
+                Temizle
+              </button>
+              <button
+                id="btnKaydet"
+                class="btn btn-outline-dark btn-sm"
+                type="button"
+              >
+                Kaydet
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row mt-5 n-menu"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
- 
